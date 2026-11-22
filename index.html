@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Periodic Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Periodic Table</h1>
+        <p>Explore Elements • Discover Properties • Learn Chemistry</p>
+        <input type="text" id="search" placeholder="Search element by name or symbol...">
+    </header>
+
+    <div class="legend" id="legend"></div>
+
+    <div class="table-container">
+        <div class="periodic-table" id="table"></div>
+        <div class="series" id="series"></div>
+    </div>
+
+    <div class="details" id="details">
+        <button class="close" id="close">×</button>
+
+        <div class="detail-content">
+            <div class="big-symbol" id="dSymbol"></div>
+
+            <div>
+                <h2 id="dName"></h2>
+                <p id="dNumber"></p>
+                <p id="dMass"></p>
+                <p id="dCategory"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
